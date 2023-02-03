@@ -137,7 +137,7 @@ function calcularProteinas(){
     const gramosProt = ((caloriasDiaria * 18 / 100) / 4);
     return gramosProt
     // const gKgPesoDia = gramosProt / pesoAjsutado;
-    // return gKgPesoDia;
+    // return gKgPesoDia; 1,2g/kgpeso/dia
 }
 function calcularLipidos(){
     const gramosLip = ((caloriasDiaria * 25 / 100) / 9);
@@ -147,3 +147,14 @@ function calcularLipidos(){
 calcularCarboHidratos();
 calcularProteinas();
 calcularLipidos();
+
+//despues de esto también se puede hacer una pequeña distribución por refección(desayuno, media mañana, almuerzo, merienda, colación,cena)
+/*
+calorias diarias (100%)      |      distribución
+    10% de las cal totales  |      desayuno - merienda
+    5% de las cal totales   |      media mañana - colación
+    25% de las cal totales  |      almuerzo - cena
+
+    total 100%
+
+*/
